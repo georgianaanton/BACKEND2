@@ -38,13 +38,25 @@ public class TrainingsController {
 		
 		//mock reposnse - to be removed
 		List<TrainingDto> response = new ArrayList<>();
-		TrainingDto dto = new TrainingDto();
-		dto.setId("1");
-		dto.setDescription("Full Stack Developer");
-		dto.setMentorName("Arun Kumar");
-		dto.setRating(4);
-		dto.setStatus("confirmed");
-		response.add(dto);
+		
+		TrainingDto dto1 = new TrainingDto();
+		dto1.setId("1");
+		dto1.setDescription("Cloud Native Developer");
+		dto1.setMentorName("Arun Kumar");
+		dto1.setRating(5);
+		dto1.setStatus("confirmed");
+		response.add(dto1);
+		
+		TrainingDto dto2 = new TrainingDto();
+
+		dto2.setId("1");
+		dto2.setDescription("Full Stack Developer");
+		dto2.setMentorName("Frank Groener");
+		dto2.setRating(4);
+		dto2.setStatus("confirmed");
+		
+		
+		response.add(dto2);
 
 		return response;
 
